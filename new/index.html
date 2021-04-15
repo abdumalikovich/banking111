@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="./style.css">
+<title>WePay - Бесплатный онлайн банкинг</title>
+<main>
+   <!-- Widgets -->
+   <button class="show_form">Добавить карту</button>
+   <!-- form to add -->
+   <form class="form add">
+      <h2>Добавить карту</h2>
+      <div class="data">
+         <input name="name" type="text" value="main" placeholder="Имя карты" required>
+         <input name="number" type="text" value="1234" placeholder="Номер карты" required>
+         <input name="month" type="text" value="12" placeholder="ММ" required>
+         <input name="year" type="text" value="25" placeholder="ГГ" required>
+      </div>
+      <button class="remove_form">Добавить</button>
+   </form>
+   <!-- транзацкии и услуги -->
+   <form class="form add_transactions">
+      <h2>Оплатить услугу</h2>
+
+      <div class="data">
+         <select name="card" class="card_select">
+            <option value="">Выберите карту</option>
+         </select>
+         <select name="service" class="service_select">
+            <option value="">Выберите услугу</option>
+         </select>
+         <input type="money" placeholder="Сумма платежа">
+      </div>
+
+      <button class="remove_form">Оплатить</button>
+   </form>
+
+   <div class="home-page">
+      <div class="cards">
+         <!-- <div class="item">
+            <div class="top-card">
+               <div class="print"></div>
+               <div class="num"></div>
+            </div>
+            <div class="bottom-card">
+               <h1></h1>
+               <h4>Добавьте карту</h4>
+            </div>
+         </div> -->
+      </div>
+      <div class="services">
+         <div class="services_item">
+            <div class="services_item_logo">
+               <div class="img"></div>
+            </div>
+            <div class="services_item_price">
+               <h1>Steam</h1>
+               <span>$100</span>
+            </div>
+         </div>
+      </div>
+      <div class="transacations">
+         <div class="head-title">
+            <h3>Today, 20 sep</h3>
+            <h3>400$</h3>
+         </div>
+         <div class="transaction-first">
+            <div class="transaction-icon"></div>
+            <div class="transaction-info">
+               <div class="transaction-info-1">
+                  <h3>Steam</h3>
+                  <h4>Игры</h4>
+               </div>
+               <div class="transaction-info-2">
+                  <h3>28,33$</h3>
+                  <h4>Дебетная карта</h4>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="menu">
+         <div class="menu_item">
+            <img src="./img/chat.svg" alt="">
+            <div class="title">
+               <p>Chat</p>
+            </div>
+         </div>
+         <div class="menu_item">
+            <img src="./img/transaction.svg" alt="">
+            <div class="title">
+               <p>Transfers</p>
+            </div>
+         </div>
+         <div class="menu_item" onclick="show_service_form()">
+            <img src="./img/services.svg" alt="">
+            <div class="title">
+               <p>Оплата</p>
+            </div>
+         </div>
+         <div class="menu_item">
+            <img src="./img/settings.svg" alt="">
+            <div class="title">
+               <p>Settings</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</main>
+<script src="./test.js"></script>

@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+main {
+    width: 440px;
+    height: 895px;
+    border-radius: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+}
+
+.VISA {
+    background-color: yellow!important;
+}
+
+.Mastercard {
+    background-color: green!important;
+}
+
+.HUMO {
+    background-color: silver!important;
+}
+
+.Uzcard {
+    background-color: purple!important;
+}
+
+form {
+    border-radius: 24px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 90%;
+    padding: 24px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    grid-gap: 12px;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+}
+
+.active {
+    display: flex;
+}
+
+form h2 {
+    margin-bottom: 24px;
+}
+
+form input {
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    width: 100%;
+    padding: 5px 14px;
+    text-align: center;
+}
+
+.cards {
+    height: 230px;
+    display: flex;
+    overflow-x: scroll;
+    padding-left: 5px;
+}
+.cards .item {
+    display: inline-block;
+    min-width: 80%;
+    width: 80%;
+    height: 100%;
+    margin-right: 20px;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+}
+.cards::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.top-card {
+    display: flex;  
+    justify-content: space-between;
+}
+.print {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  margin-left: 10px;
+}
+.num {
+    padding: 5px;
+    margin-right: 10px;
+}
+.services_item {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+    border-radius: 1000px;
+    align-items: center;
+    padding: 8px 16px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .3)
+}
+.services {
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.img {
+    background-color: black;
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+}
+.services_item_logo {
+    display: flex;
+    align-items: center;
+}
+.services_item_price h1 {
+    font-size: 16px;
+    /* transform: translate(-46%, -10%); */
+}
+.services_item_price span {
+    font-size: 16px;
+    opacity: 0.67;
+}
+.head-title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+
+.transaction-icon {
+    min-width: 68px;
+    height: 68px;
+    background-color: blue;
+    border-radius: 20px;
+}
+
+.transaction-first {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    align-items: center;
+}
+
+.transaction-first h3 {
+    margin-left: 20px;
+}
+
+.transaction-first h4 {
+    margin-left: 20px;
+    color: gray;
+}
+
+.transaction-info {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaction-info-2 {
+    color: rgb(93, 90, 90);
+}
+.transaction-info-2 h4 {
+    
+}
+
+
+
+.menu .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 4px;
+}
+
+.menu img {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+.menu{
+    position: fixed;
+    bottom: 12px;
+    left: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.home-icon, .transfers, .services2, .chat, .more{
+    width: 35px;
+    margin-left: 45px;
+    height: 35px;
+    background-color: red;
+    border-radius: 10px;    
+} 
+.menu .title{
+    color: #A4A5A5;
+    margin-top: 6px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
